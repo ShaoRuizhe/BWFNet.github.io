@@ -27,37 +27,30 @@
 
 <body>
     <div style="margin:auto;max-width: 666px;text-align:justify">
-                    <h1 style="text-align: center;">BSKNet: 3D Building Reconstruction from Single Off-Nadir Remote
+                    <h1 style="text-align: center;">BWFNet: 3D Building Reconstruction from Single Off-Nadir Remote
 Sensing Image with Semi-Weak Supervisions</h1>
-                    <h3 style="text-align: center;"><a href="BSKNet.pdf">Paper</a>&emsp;<a href="https://github.com/ShaoRuizhe/BSKNet">Code</a></h3>
+                    <h3 style="text-align: center;"><a href="BSKNet.pdf">Paper</a>&emsp;<a href="https://github.com/ShaoRuizhe/BWFNet">Code</a></h3>
                     <div style="text-align:center"><img style="width: 600px;" src="image1.png"></div>
                     <div style="margin:auto;max-width: 666px;text-align:justify">
-                        3D building reconstruction using monocular remote sensing imagery has
-                        emerged as a critical research frontier in geospatial AI, driven by its
-                        superior cost-effectiveness in terms of both in data acquisition and
-                        processing time. However, the reliance of existing deep learning
-                        methodologies on a large number of manually annotated labels poses a
-                        significant barrier to their practical application. Although recent
-                        studies have contributed to reducing label dependency, a considerable
-                        amount of annotation effort is still required to establish baseline
-                        reconstruction credibility. To address this challenge, we propose a
-                        BuildingSKeletonNetwork (BSKNet) for 3D building reconstruction under
-                        semi-weak supervisions combining limited full 3D annotations with
-                        abundant building-footprint-only labels. BSKNet innovatively designs and
-                        employs a skeletal representation of buildings, which <strong>implicitly
-                        encapsulates knowledge from two dimensions: building structural
-                        knowledge and corner local information</strong>, while providing ample data for
-                        3D reconstruction. We designed BSKNet to learn the capability of
-                        building skeleton extraction from these two knowledge dimensions. Under
-                        weak supervision, the knowledge acquired from these two dimensions is
-                        synergistically enhanced via <strong>mutual complementation and
-                        cross-validation.</strong> Additionally, we propose a self-supervised training
-                        method based on consistency constraints to further
-                        improve the effect of weakly supervised training. The experimental
-                        results demonstrate that the proposed BSKNet achieves excellent
-                        reconstruction performance by utilizing only 3% fully annotated data
-                        combined with weakly supervised samples. This performance represents a
-                        significant improvement compared to current state-of-the-art methods.
+                        Rapid 3D building reconstruction in urban-scale areas has emerged as a pivotal technology for
+                        smart city applications. Recent methods that reconstruct buildings from single off-nadir imagery
+                        have gained attention due to their efficiency in both time and data costs. However, the training
+                        of these methods relies on large-scale, costly 3D annotations, including building bounding
+                        boxes, roofs, footprints, and roof-to-footprint offsets, and thus cannot be trained when only
+                        the footprint is available, despite the fact that a large amount of building footprints can be
+                        easily obtained in crowdsourced building data set form the Internet. To address this, we propose
+                        a semi-weakly supervised learning method that leverages massive weakly annotated data
+                        (footprints) and a limited number of manually annotated 3D building labels to learn to
+                        reconstruct 3D buildings. In our method, we introduce an ingenious wireframe representation to
+                        replace conventional bounding-box representation, thereby providing a foundation for semi-weakly
+                        supervised learning. Based on this representation, we propose BWFNet for extracting building
+                        wireframes. BWFNet enhances accuracy under semi-weakly supervision by modeling both structural
+                        and local knowledge. Furthermore, we propose a training strategy for building wireframe
+                        extraction grounded in the principle of geometric consistency constraints to further improve
+                        weakly supervised performance. The experimental results demonstrate that the proposed BWFNet
+                        achieves excellent reconstruction performance by utilizing only 3% fully annotated data combined
+                        with weakly supervised samples. This performance represents a significant improvement compared
+                        to current state-of-the-art methods.
                     </div>
 
 
